@@ -6,23 +6,76 @@
     <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon">
       <link href="./src/output.css" rel="stylesheet">
     <title>University</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="mx-auto">
-    
-   <nav>
-       <div class="relative w-full ">
-          <img  class=" relative w-full  object-cover " src="./src/assets/welcome-homepage-new.jpg.jpeg" alt="">
-           <div class="absolute inset-0">
-                <img class=" brightness-0 invert-100 " src="src/assets/7c1114f4-cf0c-4c20-a68e-0b3b959ed212.svg" alt="">    
-           </div>
+
+
+<body class="mx-auto font-sans">
+
+  <header class="absolute top-0 left-0 w-full z-20">
+    <div class="flex items-center justify-between px-8 py-4">
+      <div class="flex items-center space-x-4">
+       <div>
+        <img src="./src/assets/7c1114f4-cf0c-4c20-a68e-0b3b959ed212.svg" alt="">
        </div>
-   </nav>
-    <main>
+        <nav class="hidden md:flex space-x-6 text-white font-medium">
+          <a href="#" class="hover:underline">Study</a>
+          <a href="#" class="hover:underline">Student life</a>
+          <a href="#" class="hover:underline">Research and innovation</a>
+          <a href="#" class="hover:underline">Global</a>
+          <a href="#" class="hover:underline">About us</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-6 text-white text-sm">
+        <a href="#">News</a>
+        <a href="#">Jobs</a>
+        <a href="#">Donate</a>
+        <a href="#">A-Z</a>
+        <a href="#">Alumni</a>
+        <a href="#">Staff</a>
+        <a href="#">Students</a>
+      </div>
+    </div>
+  </header>
 
-    </main>
-    <footer>
+  <section class="relative h-screen">
+    <img src="./src/assets/welcome-homepage-new.jpg.jpeg" alt="Students" class="w-full h-full object-cover">
+    <div class="absolute top-1/4 left-12 text-white max-w-xl">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">YOUR NEXT CHAPTER STARTS NOW</h1>
+      <p class="text-lg mb-6">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</p>
+      <a href="#" class="inline-block bg-transparent border border-white px-6 py-3 text-lg font-medium hover:bg-white hover:text-black transition">Explore our welcome activities</a>
+    </div>
+  </section>
+   
+  <main>
+     <div class="   w-full text-white h-60 bg-[#0a2247]">
+      <div class=" flex mx-auto justify-center items-center gap-7 pt-10">
+        <p class=" font-bold text-3xl">Find your course</p>
+        <input type="text" class=" w-200 h-20 bg-white">
+        <button class=" p-5 h-20 border-2 border-white text-2xl "><p class="hover:border-b-2"> Search</p></button>
+         <div>
+            <ul>
+               <li><a class="hover:border-b-1 border-b-2 text-2xl" href="#"> Courses by A-Z</a></li>
+               <li><a class="hover:border-b-1 border-b-2 text-2xl" href="#">Courses by subject</a></li>
+            </ul>
+         </div>
+         
+     </div>
 
-    </footer>
-    
+     <div class=" flex items-center pt-10 space-x-10 text-2xl text-white  ml-80">
+         <input class=" w-10 h-10 hover:bg-blue-950" type="radio"><p>Undergraduate</p>
+         <input class=" w-10 h-10 hover:bg-blue-950" type="radio"><p>Postgraduate taught</p>
+         <input class=" w-10 h-10 hover:bg-blue-950" type="radio"><p>Postgraduate research</p>
+     </div>
+   </div>
+
+  </main>
+
+     
+
+
+
+
+
 </body>
 </html>
