@@ -11,39 +11,75 @@
 
 
 <body class="mx-auto font-sans">
-
   <header class="absolute top-0 left-0 w-full z-20">
-    <div class="flex items-center justify-between px-8 py-4">
-      <div class="flex items-center space-x-4">
-       <div>
-        <img src="./src/assets/7c1114f4-cf0c-4c20-a68e-0b3b959ed212.svg" alt="">
-       </div>
-        <nav class="hidden md:flex space-x-6 text-white font-medium">
-          <a href="#" class="hover:underline">Study</a>
-          <a href="#" class="hover:underline">Student life</a>
-          <a href="#" class="hover:underline">Research and innovation</a>
-          <a href="#" class="hover:underline">Global</a>
-          <a href="#" class="hover:underline">About us</a>
-        </nav>
-      </div>
-      <div class="flex items-center space-x-6 text-white text-sm">
-        <a href="#">News</a>
-        <a href="#">Jobs</a>
-        <a href="#">Donate</a>
-        <a href="#">A-Z</a>
-        <a href="#">Alumni</a>
-        <a href="#">Staff</a>
-        <a href="#">Students</a>
-      </div>
+  <div class="flex items-center justify-between px-6 md:px-12 py-4">
+    
+    <div class="flex items-center space-x-4">
+      <img class="w-80 h-auto brightness-0 invert-100" 
+           src="src/assets/7c1114f4-cf0c-4c20-a68e-0b3b959ed212.svg" 
+           alt="">
     </div>
-  </header>
+
+    <nav class="hidden md:flex space-x-6 text-white font-medium  relative top-20 right-24 ">
+      <a href="#" class="hover:underline">Study</a>
+      <a href="#" class="hover:underline">Student life</a>
+      <a href="#" class="hover:underline">Research and innovation</a>
+      <a href="#" class="hover:underline">Global</a>
+      <a href="#" class="hover:underline">About us</a>
+    </nav>
+
+    <div class="hidden md:flex items-center space-x-6 text-white text-sm">
+      <a href="#">News</a>
+      <a href="#">Jobs</a>
+      <a href="#">Donate</a>
+      <a href="#">A-Z</a>
+      <a href="#">Alumni</a>
+      <a href="#">Staff</a>
+      <a href="#">Students</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="hidden flex-col space-y-4 px-6 pb-4 text-white bg-[#071833] md:hidden">
+    <a href="#">Study</a>
+    <a href="#">Student life</a>
+    <a href="#">Research and innovation</a>
+    <a href="#">Global</a>
+    <a href="#">About us</a>
+    <div class="border-t border-gray-500 pt-4 flex flex-col space-y-2 text-sm">
+      <a href="#">News</a>
+      <a href="#">Jobs</a>
+      <a href="#">Donate</a>
+      <a href="#">A-Z</a>
+      <a href="#">Alumni</a>
+      <a href="#">Staff</a>
+      <a href="#">Students</a>
+    </div>
+  </div>
+</header>
 
   <section class="relative h-screen">
+      
+
     <img src="./src/assets/welcome-homepage-new.jpg.jpeg" alt="Students" class="w-full h-full object-cover">
     <div class="absolute top-1/4 left-12 text-white max-w-xl">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">YOUR NEXT CHAPTER STARTS NOW</h1>
-      <p class="text-lg mb-6">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</p>
-      <a href="#" class="inline-block bg-transparent border border-white px-6 py-3 text-lg font-medium hover:bg-white hover:text-black transition">Explore our welcome activities</a>
+      <h1 class="text-4xl md:text-4xl font-extrabold mb-4 leading-tight  border-4 p-5 w-160">YOUR NEXT CHAPTER STARTS NOW</h1>
+      <p class="text-2xl mb-6 border-4 p-4 -mt-5">Welcome to Liverpool! If you're joining us in September, we can't wait to meet you. Find out what you can do now to get ready.</p>
+<div class="flex">
+  <a href="#" class="flex justify-between items-center bg-transparent border border-white px-6 py-3 text-lg font-medium w-full max-w-sm">
+    <span class="text-left leading-tight">
+      Explore our welcome <br> activities
+    </span>
+    <svg class="w-5 h-10 brightness-0 invert-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+      <path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/>
+    </svg>
+  </a>
+</div>
+
+</a>
     </div>
   </section>
    
@@ -223,7 +259,7 @@
        <div class=" border-t-1 w-70 mx-auto ">
         <div class=" flex items-center space-x-20 mt-15">
            <a class="border-b-1  text-[18px] font-bold text-blue-950" href="">Researach Frontiers</a>
-           <svg class=" w-5 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/></svg>
+           <svg class=" w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/></svg>
         </div>  
     <div class=" w-70">     
      <p class=" opacity-90">
@@ -239,7 +275,7 @@
        <div class=" border-t-1 w-100 mx-auto ">
         <div class=" flex items-center space-x-10 mt-15">
            <a class="border-b-1  text-[18px] font-bold text-blue-950" href="">Interdisciplinary Centre for Sustainability Research</a>
-           <svg class=" w-5 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/></svg>
+           <svg class=" w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/></svg>
         </div>  
     <div class=" w-70">     
      <p class=" opacity-90">
@@ -257,7 +293,7 @@ Explore our new Interdisciplinary Centre for Sustainability Research and find ou
        <div class=" border-t-1 w-70 mx-auto ">
         <div class=" flex items-center space-x-20 mt-15">
            <a class="border-b-1  text-[18px] font-bold text-blue-950" href="">Our Impact</a>
-           <svg class=" w-5 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/></svg>
+           <svg class=" w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M98.9 114.6C91.5 130.6 98.5 149.7 114.5 157.1L467.6 320L114.6 483C98.6 490.4 91.5 509.4 99 525.5C106.5 541.6 125.4 548.5 141.5 541.1L557.5 349.1C568.8 343.9 576.1 332.5 576.1 320C576.1 307.5 568.8 296.2 557.5 290.9L141.4 99C125.4 91.6 106.3 98.6 98.9 114.6z"/></svg>
         </div>  
     <div class=" w-70">     
      <p class=" opacity-90">
@@ -272,14 +308,14 @@ Explore our research     </p>
 
  </div>      
 
-    <div class="  w-50 ml-3 mt-30"><p class=" text-[18px] border p-1 ">Explore our Research</p></div>
+    <div class="  w-50 ml-3 mt-30"><p class=" text-[18px] border p-3 ">Explore our Research</p></div>
 
 
    
 
 
-     <div  class=" flex justify-center items-center">
-           <img class=" w-140 -h-200 p-8" src="src/assets/student-life,(3),(1).jpg.jpeg" alt="">
+     <div  class=" flex justify-center items-center mt-10">
+           <img class=" w-140 -h-200 p-10" src="src/assets/student-life,(3),(1).jpg.jpeg" alt="">
             <div class=" block space-y-5">
                   <p class=" text-3xl font-bold "> Discover the University of Liverpool</p>
                 <p class=" text-[18px]">
@@ -359,19 +395,8 @@ Exceptional Liverpool scientists honoured with Royal Society awards</p>
      
   </div>
 
-  <div class="  w-50 ml-3 mt-30"><p class=" text-[18px] border p-1 ">Read more news</p></div>
+  <div class="  w-40 ml-3 mt-30"><p class=" text-[18px] border p-3 ">Read more news</p></div>
 
-
-
-
-
-
-
-
-
-
-
-  
 
       
     <p class=" font-bold text-4xl ml-3 ">Latest Events</p>
@@ -404,7 +429,7 @@ Exceptional Liverpool scientists honoured with Royal Society awards</p>
      
   </div>
 
-  <div class="  w-50 ml-3 mt-20 pb-15"><p class=" text-[18px] border p-1 pb-5 ">See more Events</p></div>
+  <div class="  w-40 ml-3 mt-20 pb-15"><p class=" text-[18px] border p-3 pb-5 ">See more Events</p></div>
 
      </section>
 
