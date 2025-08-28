@@ -111,26 +111,36 @@
    
   <main class=" mx-auto ">
     
-     <div class="  w-full text-white h-45 bg-[#0a2247]">
-      <div class=" flex mx-auto justify-center items-center gap-7 pt-5">
-        <p class=" font-bold text-[20px]">Find your course</p>
-        <input type="text" class=" w-150 h-15 bg-white">
-        <button class="flex justify-center items-center p-5 h-15 border-1 border-white "><p class="hover:border-b-2 text-[20px]"> Search</p></button>
-         <div>
-            <ul>
-               <li><a class="hover:border-b-1 border-b-2 text-[20px]" href="#"> Courses by A-Z</a></li>
-               <li><a class="hover:border-b-1 border-b-2 text-[20px]" href="#">Courses by subject</a></li>
-            </ul>
-         </div>
-         
-     </div>
+    <div class="w-full text-white h-45 bg-[#0a2247] p-4 md:p-0">
+  <div class="flex flex-col md:flex-row mx-auto justify-center items-center gap-4 md:gap-7 pt-5">
+    <p class="font-bold text-[20px]">Find your course</p>
+    <input type="text" class="w-full md:w-150 h-15 bg-white">
+    <button class="flex justify-center items-center p-5 h-15 border-1 border-white">
+      <p class="hover:border-b-2 text-[20px]">Search</p>
+    </button>
+    <div>
+      <ul class="flex flex-col md:flex-row gap-2 md:gap-4">
+        <li><a class="hover:border-b-1 border-b-2 text-[20px]" href="#">Courses by A-Z</a></li>
+        <li><a class="hover:border-b-1 border-b-2 text-[20px]" href="#">Courses by subject</a></li>
+      </ul>
+    </div>
+  </div>
 
-     <div class=" flex items-center pt-10 space-x-4 text-[20px] text-white  ml-75">
-         <input class=" w-7 h-7 hover:bg-blue-950" type="radio"><p>Undergraduate</p>
-         <input class=" w-7 h-7 hover:bg-blue-950" type="radio"><p>Postgraduate taught</p>
-         <input class=" w-7 h-7 hover:bg-blue-950" type="radio"><p>Postgraduate research</p>
-     </div>
-   </div>
+  <div class="flex flex-col sm:flex-row items-start sm:items-center pt-10 space-y-2 sm:space-y-0 sm:space-x-4 text-[20px] text-white ml-0 sm:ml-75">
+    <label class="flex items-center space-x-2">
+      <input class="w-7 h-7 hover:bg-blue-950" type="radio">
+      <span>Undergraduate</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input class="w-7 h-7 hover:bg-blue-950" type="radio">
+      <span>Postgraduate taught</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input class="w-7 h-7 hover:bg-blue-950" type="radio">
+      <span>Postgraduate research</span>
+    </label>
+  </div>
+</div>
 
 
 
@@ -456,16 +466,6 @@
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
 <div class="w-40 ml-3 mt-20 mx-auto md:ml-3"><p class="text-[18px] border p-3">Read more news</p></div>
 
 <p class="font-bold text-4xl ml-3 mt-10 text-center md:text-left">Latest Events</p>
@@ -592,4 +592,4 @@
 
   
 </body>
-</html>
+</html>   I gave you 596 lines why are you giving me less than that while you have to increase them added responsiveness
